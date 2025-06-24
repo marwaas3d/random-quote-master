@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#121a27;
+    --box-color:#202a3b;
+    --text-color:#E3E8EF;
+    --buttons-color:#9075cd;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.box{
+    background-color: var(--box-color);
+    color: var(--text-color);
+    padding-bottom: 32px !important;
+    padding-right: 65px !important;
+    padding-left: 65px !important;
+    background-image: url(./resources/bg-image-random-quote.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+.box h3{
+    font-size: 20px;
+}
+.box button{
+    color: var(--buttons-color);
+    border-color: var(--buttons-color);
+    font-size: 10px;
+}
+
+.box p{
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  max-width: 25rem;
+  position: relative;
+}
+
+.box p::before{
+    content: open-quote;
+    position: absolute;
+    left: -8px;
+}
+.box p::after{
+    content: close-quote;
+    position: absolute;
+}
+/************************************************************************/
+.btn-box .btn{
+    background-color: var(--box-color);
+    color: var(--text-color);
+}
+
+/*************************************************************************/
+.msg{
+    background-color: var(--box-color);
+}
